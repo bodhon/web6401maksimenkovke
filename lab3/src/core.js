@@ -34,6 +34,7 @@ function sumTo(n) {
  * @param {*} n
  */
 function recSumTo(n) {
+    if (n < 0) return undefined;
     if (n <= 1) return n;
     return n + recSumTo(n - 1);
 }
