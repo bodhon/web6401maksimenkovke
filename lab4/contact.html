@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Контакты - Звёздный Путь</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr; /* Одна колонка по умолчанию */
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) { /* Для экранов среднего и большого размера */
+            main {
+                grid-template-columns: 1fr 1fr; /* Две колонки */
+            }
+            .contact-info {
+                grid-column: 1;
+            }
+            .contact-form {
+                grid-column: 2;
+            }
+            .social-links {
+                grid-column: 1 / span 2;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .contact-info {
+            /* Стили остаются прежними */
+            grid-column: 1; /* По умолчанию занимает одну колонку */
+        }
+
+        .contact-form {
+            /* Стили остаются прежними */
+            grid-column: 1; /* По умолчанию занимает одну колонку */
+        }
+
+        .social-links {
+            grid-column: 1; /* По умолчанию занимает одну колонку */
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <h1>Contacts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="enterprise.html">USS Enterprise</a></li>
+                <li><a href="voyager.html">USS Voyager</a></li>
+                <li><a href="defiant.html">USS Defiant</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2>Связаться с нами</h2>
+            <p>Если у вас есть вопросы или предложения, пожалуйста, свяжитесь с нами по электронной почте: <a href="mailto:dont-write-to-us@startrek.com">dont-write-to-us@startrek.com</a></p>
+        </div>
+        <div class="contact-form">
+            <h3>Оставьте сообщение</h3>
+            <form id="contactForm" action="/submit" method="post">
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <h3>Следите за нами</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/dont-write-to-us" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/dont-write-to-us" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/dont-write-to-us" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 UFP's sharships</p>
+    </footer>
+    <script src="contact.js"></script>
+    <script src="loading.js"></script>
+</body>
+</html>

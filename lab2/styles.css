@@ -1,0 +1,90 @@
+/* Стили для всего документа */
+body {
+    font-family: 'Orbitron', sans-serif; /* Используем шрифт Orbitron */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Темный фон для футуристического стиля */
+    color: #f4f4f4; /* Светлый цвет текста для контраста */
+}
+
+/* Стили для заголовка */
+header {
+    background: #222; /* Темный фон для заголовка */
+    color: #00ff00; /* Зеленый цвет текста */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00; /* Зеленый цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Желтый цвет при наведении */
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 20px;
+    background: #333; /* Темный фон для основного содержимого */
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 35%;
+    height: auto;
+}
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #444; /* Темные границы для таблицы */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #444; /* Темный фон для заголовков таблицы */
+    color: #00ff00; /* Зеленый цвет текста в заголовках */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222; /* Темный фон для подвала */
+    color: #00ff00; /* Зеленый цвет текста */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Выравнивание текста в таблице */
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}

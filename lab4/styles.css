@@ -1,0 +1,153 @@
+/* Стили для всего документа */
+body {
+    transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
+    font-family: 'Orbitron', sans-serif; /* Используем шрифт Orbitron */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Темный фон для футуристического стиля */
+    color: #f4f4f4; /* Светлый цвет текста для контраста */
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+/* Стили для заголовка */
+header {
+    background: #222; /* Темный фон для заголовка */
+    color: #00ff00; /* Зеленый цвет текста */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00; /* Зеленый цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Желтый цвет при наведении */
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 20px;
+    background: #333; /* Темный фон для основного содержимого */
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 35%;
+    height: auto;
+}
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #444; /* Темные границы для таблицы */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #444; /* Темный фон для заголовков таблицы */
+    color: #00ff00; /* Зеленый цвет текста в заголовках */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222; /* Темный фон для подвала */
+    color: #00ff00; /* Зеленый цвет текста */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Выравнивание текста в таблице */
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+/* Стили для формы на странице контактов */
+.contact-form {
+    padding: 15px;
+    background: #444;
+    border-radius: 5px;
+}
+
+.contact-form div {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f4f4f4;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #666;
+    background-color: #333;
+    color: #f4f4f4;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #00ff00;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+
+header h1 {
+    transition: transform 0.5s ease-in-out; /* Добавляем плавность */
+    display: inline-block; /* Чтобы анимация работала корректно */
+}
+
+header:hover h1 {
+    transform: rotate(360deg);
+}
+
